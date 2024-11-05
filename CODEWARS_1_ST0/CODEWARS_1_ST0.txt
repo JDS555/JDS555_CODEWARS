@@ -50,6 +50,10 @@ const quarterOf = (month) => {
 
 C3
 
+https://www.codewars.com/kata/capitalization-and-mutability
+
+
+
 ///
 
 C4+++
@@ -155,6 +159,144 @@ function toBinary(n){
 
 ///
 
-C8
+C8+++
+
+https://www.codewars.com/kata/even-or-odd
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+РЕШЕНИЕ:
+
+function evenOrOdd(number) {
+  if ( number % 2 === 0 ){
+    return "Even";
+  }
+  return "Odd";
+}
 
 ///
+
+C9
+
+https://www.codewars.com/kata/fake-binary/javascript
+
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+
+РЕШЕНИЕ:
+
+
+///
+
+C10+++
+
+https://www.codewars.com/kata/largest-square-inside-a-circle
+
+Determine the area of the largest square that can fit inside a circle with radius r.
+
+РЕШЕНИЕ:
+
+Если у нас есть радиус описанной окружности
+Возведем его в квадрат и умножим на два.
+S = 2 × R * R, где R — это радиус описанной окружности. 
+Источник - Онлайн школа Skysmart: https://skysmart.ru/articles/mathematic/ploshad-kvadrata
+
+function areaLargestSquare(r) {
+  return 2 * ( r * r ) ;
+}
+
+
+///
+
+C11
+
+https://www.codewars.com/kata/number-of-decimal-digits
+
+Determine the total number of digits in the integer (n>=0) given as input to the function. For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
+
+All inputs will be valid.
+
+РЕШЕНИЕ:
+
+
+///
+
+С12+++
+
+https://www.codewars.com/kata/opposite-number
+
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
+
+РЕШЕНИЕ:
+
+function opposite(number) {
+  return -number;
+}
+
+///
+
+C13
+
+https://www.codewars.com/kata/perimeter-sequence
+
+Perimeter sequence
+The first three stages of a sequence are shown.
+
+blocks *ТУТ КАРТИНКА В УСЛОВИИ
+
+The blocksize is a by a and a ≥ 1.
+
+What is the perimeter of the nth shape in the sequence (n ≥ 1) ?
+
+РЕШЕНИЕ:
+
+
+
+///
+
+C14
+
+///
+
+C15
+
+///
+
+C16
+
+///
+
+C17+++
+
+https://www.codewars.com/kata/simple-multiplication
+
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+РЕШЕНИЕ:
+
+function simpleMultiplication(number) {
+  if ( number % 2 === 0 ){
+    return number * 8;
+  }
+  return number * 9;
+}
+
+///
+
+
+
+
+
+
+
+
+
+
+
