@@ -1,0 +1,627 @@
+
+CODEWARS_1_ST0
+
+///
+
+C1+++
+
+https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
+
+Make a simple function called greet that returns the most-famous "hello world!".
+Style Points
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+
+РЕШЕНИЕ:
+
+// Write a function "greet" that returns "hello world!"
+function greet() {
+  return "hello world!";
+}
+
+///
+
+C2+++
+
+https://www.codewars.com/kata/quarter-of-the-year
+
+Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
+
+Constraint:
+1 <= month <= 12
+
+РЕШЕНИЕ:
+
+
+const quarterOf = (month) => {
+  if (month >= 1 && month <= 3 ){
+    return 1;
+  } else if ( month >= 4 && month <= 6 ){
+    return 2;
+  } else if ( month >= 4 && month <=9 ){
+    return 3;
+  } else {
+    return 4;
+  }
+}
+
+
+///
+
+C3+++
+
+https://www.codewars.com/kata/capitalization-and-mutability
+
+Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
+
+Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).
+The string will always start with a letter and will never be empty.
+
+Examples:
+"hello" --> "Hello"
+"Hello" --> "Hello" (the first letter was already capitalized)
+"a"     --> "A"
+
+РЕШЕНИЕ:
+
+function capitalizeWord(word) {
+  const wordCapitalize = word[0].toUpperCase() + word.slice(1);
+  return wordCapitalize;
+}
+
+///
+
+C4+++
+
+https://www.codewars.com/kata/century-from-year
+
+Introduction
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+Task
+Given a year, return the century it is in.
+
+Examples
+1705 --> 18
+1900 --> 19
+1601 --> 17
+2000 --> 20
+2742 --> 28
+
+Note: this kata uses strict construction as shown in the description and the examples, you can read more about it here
+
+РЕШЕНИЕ:
+
+function century(year) {
+  return Math.ceil(year/100);
+}
+
+///
+
+C5+++
+
+https://www.codewars.com/kata/convert-a-number-to-a-string
+
+We need a function that can transform a number (integer) into a string.
+
+What ways of achieving this do you know?
+
+Examples (input --> output):
+123  --> "123"
+999  --> "999"
+-100 --> "-100"
+
+РЕШЕНИЕ:
+
+function numberToString(num) {
+  return String(num);
+}
+
+///
+
+C6+++
+
+https://www.codewars.com/kata/convert-a-string-to-a-number
+
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" --> 1234
+"605"  --> 605
+"1405" --> 1405
+"-7" --> -7
+
+РЕШЕНИЯ:
+
+//Сразу несколько
+ чтобы показать сколько я знаю вариантов
+
+const stringToNumber = function(str){
+  return +str;
+}
+
+const stringToNumber = function(str){
+  return Number(str);
+}
+
+
+const stringToNumber = function(str){
+  return parseInt(str);
+}
+
+///
+
+C7+++
+
+https://www.codewars.com/kata/convert-to-binary
+
+Task Overview
+Given a non-negative integer b, write a function which returns an integer d such that the binary representation of b is the same as the decimal representation of d.
+
+Examples:
+
+n = 1 should return 1
+n = 5 should return 101
+n = 11 should return 1011
+
+РЕШЕНИЕ:
+
+function toBinary(n){
+  return +n.toString(2);
+}
+
+///
+
+C8+++
+
+https://www.codewars.com/kata/even-or-odd
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+РЕШЕНИЕ:
+
+function evenOrOdd(number) {
+  if ( number % 2 === 0 ){
+    return "Even";
+  }
+  return "Odd";
+}
+
+///
+
+C9
+
+https://www.codewars.com/kata/fake-binary/javascript
+
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+
+РЕШЕНИЕ:
+
+Сначала решал в кодпене там проще разобраться.
+Массивы обьекты подробно еще не "раскладывал по полочкам в голове"
+но открыл статью по методам массивов + гуглил как сделать перебор
+итерируемого обьекта.
+
+Для targetString решение:
+
+"use strict"
+
+let targetString = "45385593107843568";
+
+function fakeBin(targetString) {
+  
+  let iterableTarget = targetString.split("");
+  let arrayCharacters = [];
+  
+  for( let char of iterableTarget ){
+
+    if( char < 5 ){
+      arrayCharacters.unshift(0);  
+    } else {
+      arrayCharacters.unshift(1); 
+    }
+  }
+  return arrayCharacters.join("");
+}
+
+console.log(fakeBin(targetString));
+
+// "11100110001111010"
+
+Для CodeWars:
+
+!Я тут исправил ошибку и заменил unshift на push.
+Так как он возвращал строку задом наперед.
+
+function fakeBin(x) {
+  
+  let iterableTarget = x.split("");
+  let arrayCharacters = [];
+  
+  for( let char of iterableTarget ){
+
+    if( char < 5 ){
+      arrayCharacters.push("0");  
+    } else if( char >= 5 ) {
+      arrayCharacters.push("1"); 
+    }
+  }
+  return arrayCharacters.join('');
+}
+
+///
+
+C10+++
+
+https://www.codewars.com/kata/largest-square-inside-a-circle
+
+Determine the area of the largest square that can fit inside a circle with radius r.
+
+РЕШЕНИЕ:
+
+Если у нас есть радиус описанной окружности
+Возведем его в квадрат и умножим на два.
+S = 2 × R * R, где R — это радиус описанной окружности. 
+Источник - Онлайн школа Skysmart: https://skysmart.ru/articles/mathematic/ploshad-kvadrata
+
+function areaLargestSquare(r) {
+  return 2 * ( r * r ) ;
+}
+
+
+///
+
+C11+++
+
+https://www.codewars.com/kata/number-of-decimal-digits
+
+Determine the total number of digits in the integer (n>=0) given as input to the function. For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
+
+All inputs will be valid.
+
+РЕШЕНИЕ:
+
+function digits(n) {
+  return String(n).length;
+}
+
+///
+
+С12+++
+
+https://www.codewars.com/kata/opposite-number
+
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
+
+РЕШЕНИЕ:
+
+function opposite(number) {
+  return -number;
+}
+
+///
+
+C13+++
+
+https://www.codewars.com/kata/perimeter-sequence
+
+Perimeter sequence
+The first three stages of a sequence are shown.
+
+blocks *ТУТ КАРТИНКА В УСЛОВИИ
+
+The blocksize is a by a and a ≥ 1.
+
+What is the perimeter of the nth shape in the sequence (n ≥ 1) ?
+
+РЕШЕНИЕ:
+
+function perimeterSequence(a,n) {
+  return n * ( a * 4);
+}
+
+///
+
+C14+++
+
+https://www.codewars.com/kata/remove-first-and-last-character
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
+
+РЕШЕНИЕ:
+
+function removeChar(str){
+  const finalString = str.slice( 1 , -1 );
+  return finalString;
+};
+
+///
+
+C15+++
+
+https://www.codewars.com/kata/remove-string-spaces
+
+Write a function that removes the spaces from the string, then return the resultant string.
+
+Examples (Input -> Output):
+
+"8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
+"8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
+"8aaaaa dddd r     " -> "8aaaaaddddr"
+
+РЕШЕНИЕ:
+
+Нагуглил метод string.replaceAll()
+
+function noSpace(x){
+  return x.replaceAll(' ' , '');
+}
+
+///
+
+C16+++
+
+https://www.codewars.com/kata/string-ends-with
+
+Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+Examples:
+
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
+
+РЕШЕНИЕ:
+
+function solution(str, ending){
+ return str.endsWith(ending);
+}
+
+///
+
+C17+++
+
+https://www.codewars.com/kata/simple-multiplication
+
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+РЕШЕНИЕ:
+
+function simpleMultiplication(number) {
+  if ( number % 2 === 0 ){
+    return number * 8;
+  }
+  return number * 9;
+}
+
+///
+
+C18+++
+
+https://www.codewars.com/kata/string-repeat
+
+Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
+
+РЕШЕНИЕ:
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+///
+
+C19+++
+
+https://www.codewars.com/kata/students-final-grade
+
+Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
+
+This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
+
+This function should return a number (final grade). There are four types of final grades:
+
+100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
+90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
+75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
+0, in other cases
+Examples(Inputs-->Output):
+
+100, 12 --> 100
+99, 0 --> 100
+10, 15 --> 100
+
+85, 5 --> 90
+
+55, 3 --> 75
+
+55, 0 --> 0
+20, 2 --> 0
+*Use Comparison and Logical Operators.
+
+РЕШЕНИЕ:
+
+function finalGrade (exam, projects) {
+  if( exam > 90 || projects > 10 ) {
+    return 100;
+  } else if( exam > 75 && projects >=5 ) {
+    return 90;
+  } else if( exam > 50 && projects >= 2 ) {
+    return 75;
+  }
+  return 0;
+}
+
+///
+
+C20+++
+
+https://www.codewars.com/kata/switch-it-up
+
+When provided with a number between 0-9, return it in words. Note that the input is guaranteed to be within the range of 0-9.
+
+Input: 1
+
+Output: "One".
+
+If your language supports it, try using a switch statement.
+
+РЕШЕНИЕ:
+
+function switchItUp(number){
+  switch(number) {
+    case 0:
+      return "Zero";
+      break;
+    case 1:
+      return "One";
+      break;
+    case 2:
+      return "Two";
+      break;
+    case 3:
+      return "Three";
+      break;
+    case 4:
+      return "Four";
+      break;
+    case 5:
+      return "Five";
+      break;
+    case 6:
+      return "Six";
+      break;
+    case 7:
+      return "Seven";
+      break;
+    case 8:
+      return "Eight";
+      break;
+    case 9:
+      return "Nine";
+      break;
+  }
+}
+
+///
+
+C21+++
+
+https://www.codewars.com/kata/thinkful-logic-drills-traffic-light
+
+You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+
+For example, when the input is green, output should be yellow.
+
+РЕШЕНИЕ:
+
+function updateLight(current) {
+  if (current === "green") {
+    return "yellow";
+  } else if (current === "yellow") {
+    return "red";
+  } else if (current === "red") {
+    return "green";
+  }
+}
+
+///
+
+C22+++
+
+https://www.codewars.com/kata/third-angle-of-a-triangle
+
+You are given two interior angles (in degrees) of a triangle.
+
+Write a function to return the 3rd.
+
+Note: only positive integers will be tested.
+
+https://en.wikipedia.org/wiki/Triangle
+
+РЕШЕНИЕ:
+
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
+
+///
+
+C23+++
+
+https://www.codewars.com/kata/transportation-on-vacation
+
+After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
+
+You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d).
+
+РЕШЕНИЕ:
+
+function rentalCarCost(d) {
+  const rentalCostEveryDay = 40;
+  
+  if( d >= 7 ) {
+    return ( 40 * d ) - 50;
+  } else if ( d >= 3 ) {
+    return ( 40 * d ) - 20;
+  }
+    return 40 * d ;
+}
+
+///
+
+C24+++
+
+https://www.codewars.com/kata/type-of-sum
+
+Return the type of the sum of the two arguments
+
+РЕШЕНИЕ:
+
+function typeOfSum(a, b) {
+  return typeof( a + b );
+}
+
+///
+
+C25+++
+
+https://www.codewars.com/kata/will-you-make-it
+
+You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+
+Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+
+Function should return true if it is possible and false if not.
+
+РЕШЕНИЕ:
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if ( distanceToPump <= mpg * fuelLeft ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+///
+
+*
