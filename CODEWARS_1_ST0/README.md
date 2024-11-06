@@ -7,6 +7,7 @@ CODEWARS_1_ST0
 JDS555_CODEWARS
 
 CODEWARS1_ST0
+CODEWARS1_ST0
 С1+++ 8kyu https://www.codewars.com/kata/function-1-hello-world
 С2+++ 8kyu https://www.codewars.com/kata/quarter-of-the-year
 С3+++ 8kyu https://www.codewars.com/kata/capitalization-and-mutability
@@ -25,11 +26,11 @@ CODEWARS1_ST0
 С16+++ 7kyu https://www.codewars.com/kata/string-ends-with
 С17+++ 8kyu https://www.codewars.com/kata/simple-multiplication
 С18+++ 8kyu https://www.codewars.com/kata/string-repeat
-С19 8kyu https://www.codewars.com/kata/students-final-grade
-С20 8kyu https://www.codewars.com/kata/switch-it-up
-С21 8kyu https://www.codewars.com/kata/thinkful-logic-drills-traffic-light
-С22 8kyu https://www.codewars.com/kata/third-angle-of-a-triangle
-С23 8kyu https://www.codewars.com/kata/transportation-on-vacation
-С24 8kyu https://www.codewars.com/kata/type-of-sum
-С25 8kyu https://www.codewars.com/kata/will-you-make-it
+С19+++ 8kyu https://www.codewars.com/kata/students-final-grade
+С20+++ 8kyu https://www.codewars.com/kata/switch-it-up
+С21+++ 8kyu https://www.codewars.com/kata/thinkful-logic-drills-traffic-light
+С22+++ 8kyu https://www.codewars.com/kata/third-angle-of-a-triangle
+С23+++ 8kyu https://www.codewars.com/kata/transportation-on-vacation
+С24+++ 8kyu https://www.codewars.com/kata/type-of-sum
+С25+++ 8kyu https://www.codewars.com/kata/will-you-make-it
 ///
