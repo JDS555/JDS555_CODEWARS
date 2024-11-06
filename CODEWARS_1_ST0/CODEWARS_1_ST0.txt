@@ -48,11 +48,26 @@ const quarterOf = (month) => {
 
 ///
 
-C3
+C3+++
 
 https://www.codewars.com/kata/capitalization-and-mutability
 
+Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
 
+Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).
+The string will always start with a letter and will never be empty.
+
+Examples:
+"hello" --> "Hello"
+"Hello" --> "Hello" (the first letter was already capitalized)
+"a"     --> "A"
+
+РЕШЕНИЕ:
+
+function capitalizeWord(word) {
+  const wordCapitalize = word[0].toUpperCase() + word.slice(1);
+  return wordCapitalize;
+}
 
 ///
 
@@ -186,6 +201,57 @@ Note: input will never be an empty string
 
 РЕШЕНИЕ:
 
+Сначала решал в кодпене там проще разобраться.
+Массивы обьекты подробно еще не "раскладывал по полочкам в голове"
+но открыл статью по методам массивов + гуглил как сделать перебор
+итерируемого обьекта.
+
+Для targetString решение:
+
+"use strict"
+
+let targetString = "45385593107843568";
+
+function fakeBin(targetString) {
+  
+  let iterableTarget = targetString.split("");
+  let arrayCharacters = [];
+  
+  for( let char of iterableTarget ){
+
+    if( char < 5 ){
+      arrayCharacters.unshift(0);  
+    } else {
+      arrayCharacters.unshift(1); 
+    }
+  }
+  return arrayCharacters.join("");
+}
+
+console.log(fakeBin(targetString));
+
+// "11100110001111010"
+
+Для CodeWars:
+
+!Я тут исправил ошибку и заменил unshift на push.
+Так как он возвращал строку задом наперед.
+
+function fakeBin(x) {
+  
+  let iterableTarget = x.split("");
+  let arrayCharacters = [];
+  
+  for( let char of iterableTarget ){
+
+    if( char < 5 ){
+      arrayCharacters.push("0");  
+    } else if( char >= 5 ) {
+      arrayCharacters.push("1"); 
+    }
+  }
+  return arrayCharacters.join('');
+}
 
 ///
 

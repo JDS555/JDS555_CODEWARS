@@ -1,7 +1,7 @@
 
 CODEWARS_1_ST0
 
-9/25
+12/25
 
 
 JDS555_CODEWARS
@@ -9,13 +9,13 @@ JDS555_CODEWARS
 CODEWARS1_ST0
 С1+++ 8kyu https://www.codewars.com/kata/function-1-hello-world
 С2+++ 8kyu https://www.codewars.com/kata/quarter-of-the-year
-С3 8kyu https://www.codewars.com/kata/capitalization-and-mutability
+С3+++ 8kyu https://www.codewars.com/kata/capitalization-and-mutability
 С4+++ 8kyu https://www.codewars.com/kata/century-from-year
 С5+++ 8kyu https://www.codewars.com/kata/convert-a-number-to-a-string
 С6+++ 8kyu https://www.codewars.com/kata/convert-a-string-to-a-number
 С7+++ 8kyu https://www.codewars.com/kata/convert-to-binary
 С8+++ 8kyu https://www.codewars.com/kata/even-or-odd
-С9 8kyu https://www.codewars.com/kata/fake-binary/javascript
+С9+++ 8kyu https://www.codewars.com/kata/fake-binary/javascript
 С10+++ 7kyu https://www.codewars.com/kata/largest-square-inside-a-circle
 С11 7kyu https://www.codewars.com/kata/number-of-decimal-digits
 С12+++ 8kyu https://www.codewars.com/kata/opposite-number
