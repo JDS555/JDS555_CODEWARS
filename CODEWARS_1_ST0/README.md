@@ -1,12 +1,8 @@
 
-CODEWARS_1_ST0
+CODEWARS_1_ST0+++
 
-18/25
+25/25
 
-
-JDS555_CODEWARS
-
-CODEWARS1_ST0
 CODEWARS1_ST0
 С1+++ 8kyu https://www.codewars.com/kata/function-1-hello-world
 С2+++ 8kyu https://www.codewars.com/kata/quarter-of-the-year
@@ -33,4 +29,5 @@ CODEWARS1_ST0
 С23+++ 8kyu https://www.codewars.com/kata/transportation-on-vacation
 С24+++ 8kyu https://www.codewars.com/kata/type-of-sum
 С25+++ 8kyu https://www.codewars.com/kata/will-you-make-it
+
 ///
