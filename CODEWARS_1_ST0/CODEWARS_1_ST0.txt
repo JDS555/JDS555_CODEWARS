@@ -57,6 +57,21 @@ const quarterOf = (month) => {
   }
 }
 
+ИСПРАВЛЕНИЕ-1: Переписал через switch
+
+const quarterOf = (month) => {
+  switch (true) {
+    case (month >= 1 && month <= 3 ):
+      return 1;
+    case ( month >= 4 && month <= 6 ):
+      return 2;
+    case ( month >= 4 && month <=9 ):
+      return 3;
+    case (month >= 10 && month <= 12):
+      return 4;
+   }
+ }
+
 ///
 
 C3+++
@@ -163,6 +178,25 @@ function numberToString(num) {
   return String(num);
 }
 
+
+ИСПРАВЛЕНИЕ-2: Написал еще несколькими способами
+
+function numberToString(num) {
+  return num.toString();
+}
+
+*
+
+function numberToString(num) {
+  return num + '';
+}
+
+*
+
+function numberToString(num) {
+  return `${num}`;
+}
+
 ///
 
 C6+++
@@ -206,6 +240,14 @@ const stringToNumber = function(str){
 const stringToNumber = function(str){
   return parseInt(str);
 }
+
+ИСПРАВЛЕНИЕ-4: Переписал ещё один способ
+
+
+const stringToNumber = function(str){
+  return str.toNumber();
+}
+
 
 ///
 
@@ -346,7 +388,17 @@ S = 2 × R * R, где R — это радиус описанной окружн
 Источник - Онлайн школа Skysmart: https://skysmart.ru/articles/mathematic/ploshad-kvadrata
 
 function areaLargestSquare(r) {
-  return 2 * ( r * r ) ;
+  return 2 * ( r * r );
+}
+
+ИСПРАВЛЕНИЕ-3: Переписал через два разных способа
+
+function areaLargestSquare(r) {
+  return 2 * ( r ** 2 );
+}
+
+function areaLargestSquare(r) {
+  return 2 * Math.pow( r , 2 );
 }
 
 
@@ -447,7 +499,18 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 function removeChar(str){
   const finalString = str.slice( 1 , -1 );
   return finalString;
-};
+}
+
+ИСПРАВЛЕНИЕ-4: Ошибки собственное не будет. Вернет "".
+Переписал с проверкой длинны строки
+
+function removeChar(str) {
+  if (str.length < 2) {
+    return "Ошибка. Длинна строки минимум 2!";
+  }
+  const finalString = str.slice(1, -1);
+  return finalString;
+}
 
 ///
 
@@ -636,38 +699,31 @@ If your language supports it, try using a switch statement.
 
 РЕШЕНИЕ:
 
+ИСПРАВЛЕНИЕ-5: Забыл про то, что return останавливает
+выполнение функции. Переписал без него.
+
 function switchItUp(number){
   switch(number) {
     case 0:
       return "Zero";
-      break;
     case 1:
       return "One";
-      break;
     case 2:
       return "Two";
-      break;
     case 3:
       return "Three";
-      break;
     case 4:
       return "Four";
-      break;
     case 5:
       return "Five";
-      break;
     case 6:
       return "Six";
-      break;
     case 7:
       return "Seven";
-      break;
     case 8:
       return "Eight";
-      break;
     case 9:
       return "Nine";
-      break;
   }
 }
 
@@ -804,12 +860,13 @@ Function should return true if it is possible and false if not.
 
 РЕШЕНИЕ:
 
+ИСПРАВЛЕНИЕ-6: Переписал без else.
+
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   if ( distanceToPump <= mpg * fuelLeft ) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 ///
