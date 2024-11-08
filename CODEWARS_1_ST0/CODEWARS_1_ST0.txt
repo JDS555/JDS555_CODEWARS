@@ -4,12 +4,17 @@ CODEWARS_1_ST0+++
 ///
 
 C1+++
+*
 
 https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
 
 Make a simple function called greet that returns the most-famous "hello world!".
 Style Points
 Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+
+Создайте простую функцию под названием «приветствие», которая возвращает самое известное «привет, мир!».
+Очки стиля
+Конечно, это настолько просто, насколько это возможно. Но насколько вы умны, чтобы создать самый креативный «привет, мир», который только можно придумать? Какое решение «Привет, мир» вы бы хотели показать своим друзьям?
 
 РЕШЕНИЕ:
 
@@ -21,6 +26,7 @@ function greet() {
 ///
 
 C2+++
+*
 
 https://www.codewars.com/kata/quarter-of-the-year
 
@@ -29,6 +35,12 @@ For example: month 2 (February), is part of the first quarter; month 6 (June), i
 
 Constraint:
 1 <= month <= 12
+
+Учитывая месяц как целое число от 1 до 12, выведите в виде целого числа, к какому кварталу года он принадлежит.
+Например: месяц 2 (февраль) является частью первого квартала; 6-й месяц (июнь) является частью второго квартала; и месяц 11 (ноябрь) является частью четвертого квартала.
+
+Ограничение:
+1 <= месяц <= 12
 
 РЕШЕНИЕ:
 
@@ -48,6 +60,7 @@ const quarterOf = (month) => {
 ///
 
 C3+++
+*
 
 https://www.codewars.com/kata/capitalization-and-mutability
 
@@ -61,6 +74,16 @@ Examples:
 "Hello" --> "Hello" (the first letter was already capitalized)
 "a"     --> "A"
 
+Ваш коллега должен был написать простую вспомогательную функцию для написания заглавной строки (содержащей одно слово) перед тем, как уйти в отпуск.
+
+К сожалению, они уже ушли, и код, который они вам дали, не работает. Исправьте написанную ими вспомогательную функцию, чтобы она работала должным образом (т. е. она должна переводить первый символ в верхний регистр строки).
+Строка всегда начинается с буквы и никогда не будет пустой.
+
+Примеры:
+«Привет» --> «Привет»
+«Привет» --> «Привет» (первая буква уже была заглавной)
+"а" --> "А"
+
 РЕШЕНИЕ:
 
 function capitalizeWord(word) {
@@ -71,6 +94,7 @@ function capitalizeWord(word) {
 ///
 
 C4+++
+*
 
 https://www.codewars.com/kata/century-from-year
 
@@ -88,6 +112,20 @@ Examples
 
 Note: this kata uses strict construction as shown in the description and the examples, you can read more about it here
 
+Введение
+Первый век охватывает от 1-го года до 100-го года включительно, второй век - от 101-го года до 200-го года включительно и т. д.
+Задача
+Учитывая год, верните столетие, в котором он находится.
+
+Примеры
+1705 --> 18
+1900 --> 19
+1601 --> 17
+2000 --> 20
+2742 --> 28
+
+Примечание: в этом ката используется строгая конструкция, как показано в описании и примерах. Подробнее об этом можно прочитать здесь.
+
 РЕШЕНИЕ:
 
 function century(year) {
@@ -97,6 +135,7 @@ function century(year) {
 ///
 
 C5+++
+*
 
 https://www.codewars.com/kata/convert-a-number-to-a-string
 
@@ -109,6 +148,15 @@ Examples (input --> output):
 999  --> "999"
 -100 --> "-100"
 
+Нам нужна функция, которая может преобразовать число (целое) в строку.
+
+Какие способы достижения этой цели вы знаете?
+
+Примеры (ввод -> вывод):
+123 --> "123"
+999 --> "999"
+-100 --> "-100"
+
 РЕШЕНИЕ:
 
 function numberToString(num) {
@@ -118,6 +166,7 @@ function numberToString(num) {
 ///
 
 C6+++
+*
 
 https://www.codewars.com/kata/convert-a-string-to-a-number
 
@@ -131,6 +180,15 @@ Examples
 "605"  --> 605
 "1405" --> 1405
 "-7" --> -7
+
+Нам нужна функция, которая может преобразовать число (целое) в строку.
+
+Какие способы достижения этой цели вы знаете?
+
+Примеры (ввод -> вывод):
+123 --> "123"
+999 --> "999"
+-100 --> "-100"
 
 РЕШЕНИЯ:
 
@@ -152,6 +210,7 @@ const stringToNumber = function(str){
 ///
 
 C7+++
+*
 
 https://www.codewars.com/kata/convert-to-binary
 
@@ -164,6 +223,15 @@ n = 1 should return 1
 n = 5 should return 101
 n = 11 should return 1011
 
+Обзор задачи
+Учитывая неотрицательное целое число b, напишите функцию, которая возвращает целое число d такое, что двоичное представление b совпадает с десятичным представлением d.
+
+Примеры:
+
+n = 1 должно возвращать 1
+n = 5 должно вернуть 101
+n = 11 должно вернуть 1011
+
 РЕШЕНИЕ:
 
 function toBinary(n){
@@ -173,10 +241,13 @@ function toBinary(n){
 ///
 
 C8+++
+*
 
 https://www.codewars.com/kata/even-or-odd
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+Создайте функцию, которая принимает целое число в качестве аргумента и возвращает «Четное» для четных чисел или «Нечетное» для нечетных чисел.
 
 РЕШЕНИЕ:
 
@@ -190,12 +261,17 @@ function evenOrOdd(number) {
 ///
 
 C9+++
+*
 
 https://www.codewars.com/kata/fake-binary/javascript
 
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
 Note: input will never be an empty string
+
+Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на «0», а любую цифру от 5 и выше на «1». Верните полученную строку.
+
+Примечание: ввод никогда не будет пустой строкой.
 
 РЕШЕНИЕ:
 
@@ -254,10 +330,13 @@ function fakeBin(x) {
 ///
 
 C10+++
+*
 
 https://www.codewars.com/kata/largest-square-inside-a-circle
 
 Determine the area of the largest square that can fit inside a circle with radius r.
+
+Определите площадь наибольшего квадрата, который может поместиться внутри круга радиуса r.
 
 РЕШЕНИЕ:
 
@@ -274,12 +353,17 @@ function areaLargestSquare(r) {
 ///
 
 C11+++
+*
 
 https://www.codewars.com/kata/number-of-decimal-digits
 
 Determine the total number of digits in the integer (n>=0) given as input to the function. For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
 
 All inputs will be valid.
+
+Определите общее количество цифр целого числа (n>=0), заданного в качестве входных данных функции. Например, 9 — однозначное число, 66 — 2-значное, а 128685 — 6-значное. Будьте осторожны, чтобы избежать переполнения/недополнения.
+
+Все входные данные будут действительными.
 
 РЕШЕНИЕ:
 
@@ -290,6 +374,7 @@ function digits(n) {
 ///
 
 С12+++
+*
 
 https://www.codewars.com/kata/opposite-number
 
@@ -301,6 +386,14 @@ Examples:
 14: -14
 -34: 34
 
+Очень просто, по заданному числу (целое/десятичное/оба в зависимости от языка) найти его противоположное (аддитивное обратное).
+
+Примеры:
+
+1:-1
+14:-14
+-34:34
+
 РЕШЕНИЕ:
 
 function opposite(number) {
@@ -310,6 +403,7 @@ function opposite(number) {
 ///
 
 C13+++
+*
 
 https://www.codewars.com/kata/perimeter-sequence
 
@@ -322,6 +416,15 @@ The blocksize is a by a and a ≥ 1.
 
 What is the perimeter of the nth shape in the sequence (n ≥ 1) ?
 
+Последовательность периметра
+Показаны первые три этапа последовательности.
+
+блоки *ТУТ КАРТИНКА В УСЛОВИИ
+
+Размер блока равен a на a и a ≥ 1.
+
+Каков периметр n-й фигуры в последовательности (n ≥ 1)?
+
 РЕШЕНИЕ:
 
 function perimeterSequence(a,n) {
@@ -331,10 +434,13 @@ function perimeterSequence(a,n) {
 ///
 
 C14+++
+*
 
 https://www.codewars.com/kata/remove-first-and-last-character
 
 It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
+
+Это довольно просто. Ваша цель — создать функцию, которая удаляет первый и последний символы строки. Вам дан один параметр — исходная строка. Вам не нужно беспокоиться о строках, содержащих менее двух символов.
 
 РЕШЕНИЕ:
 
@@ -346,6 +452,7 @@ function removeChar(str){
 ///
 
 C15+++
+*
 
 https://www.codewars.com/kata/remove-string-spaces
 
@@ -356,6 +463,14 @@ Examples (Input -> Output):
 "8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
 "8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
 "8aaaaa dddd r     " -> "8aaaaaddddr"
+
+Напишите функцию, которая удаляет пробелы из строки, а затем возвращает результирующую строку.
+
+Примеры (Ввод -> Выход):
+
+«8 j 8 mBliB8g imjB8B8 jl B» -> «8j8mBliB8gimjB8B8jlB»
+«8 8 Bi fk8h B 8 BB8B B B B888 c hl8 BhB fd» -> «88Bifk8hB8BB8BBBB888chl8BhBfd»
+«8ааааа дддд р» -> «8ааааадддр»
 
 РЕШЕНИЕ:
 
@@ -368,10 +483,13 @@ function noSpace(x){
 ///
 
 C16+++
+*
 
 https://www.codewars.com/kata/string-ends-with
 
 Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+Завершите решение так, чтобы оно возвращало true, если первый переданный аргумент (строка) заканчивается вторым аргументом (также строкой).
 
 Examples:
 
@@ -387,10 +505,13 @@ function solution(str, ending){
 ///
 
 C17+++
+*
 
 https://www.codewars.com/kata/simple-multiplication
 
 This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+Суть этой ката заключается в умножении заданного числа на восемь, если оно четное, и на девять в противном случае.
 
 РЕШЕНИЕ:
 
@@ -404,10 +525,13 @@ function simpleMultiplication(number) {
 ///
 
 C18+++
+*
 
 https://www.codewars.com/kata/string-repeat
 
 Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Напишите функцию, которая принимает целое число n и строку s в качестве параметров и возвращает строку s, повторенную ровно n раз.
 
 Examples (input -> output)
 6, "I"     -> "IIIIII"
@@ -422,6 +546,7 @@ function repeatStr (n, s) {
 ///
 
 C19+++
+*
 
 https://www.codewars.com/kata/students-final-grade
 
@@ -449,6 +574,30 @@ Examples(Inputs-->Output):
 20, 2 --> 0
 *Use Comparison and Logical Operators.
 
+Создайте функцию FinalGrade, которая вычисляет итоговую оценку студента в зависимости от двух параметров: оценки за экзамен и количества выполненных проектов.
+
+Эта функция должна принимать два аргумента: экзамен — оценка за экзамен (от 0 до 100); проекты - количество реализованных проектов (от 0 и выше);
+
+Эта функция должна возвращать число (окончательную оценку). Существует четыре типа итоговых оценок:
+
+100, если оценка за экзамен более 90 или количество выполненных проектов более 10.
+90, если оценка за экзамен больше 75 и количество выполненных проектов не менее 5.
+75, если оценка за экзамен более 50 и количество выполненных проектов не менее 2.
+0, в остальных случаях
+Примеры (Входы -> Выход):
+
+100, 12 --> 100
+99, 0 --> 100
+10, 15 --> 100
+
+85, 5 --> 90
+
+55, 3 --> 75
+
+55, 0 --> 0
+20, 2 --> 0
+*Используйте операции сравнения и логические операторы.
+
 РЕШЕНИЕ:
 
 function finalGrade (exam, projects) {
@@ -465,6 +614,7 @@ function finalGrade (exam, projects) {
 ///
 
 C20+++
+*
 
 https://www.codewars.com/kata/switch-it-up
 
@@ -475,6 +625,14 @@ Input: 1
 Output: "One".
 
 If your language supports it, try using a switch statement.
+
+Если указано число от 0 до 9, верните его прописью. Обратите внимание, что входное значение гарантированно находится в диапазоне от 0 до 9.
+
+Ввод: 1
+
+Выход: «Один».
+
+Если ваш язык поддерживает это, попробуйте использовать оператор переключателя.
 
 РЕШЕНИЕ:
 
@@ -516,6 +674,7 @@ function switchItUp(number){
 ///
 
 C21+++
+*
 
 https://www.codewars.com/kata/thinkful-logic-drills-traffic-light
 
@@ -524,6 +683,12 @@ You're writing code to control your town's traffic lights. You need a function t
 Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
 
 For example, when the input is green, output should be yellow.
+
+Вы пишете код для управления светофорами вашего города. Вам нужна функция для обработки каждого изменения с зеленого на желтый, на красный, а затем снова на зеленый.
+
+Завершите функцию, которая принимает строку в качестве аргумента, представляющую текущее состояние источника света, и возвращает строку, представляющую состояние, в которое должен перейти источник света.
+
+Например, если вход зеленый, выход должен быть желтым.
 
 РЕШЕНИЕ:
 
@@ -540,6 +705,7 @@ function updateLight(current) {
 ///
 
 C22+++
+*
 
 https://www.codewars.com/kata/third-angle-of-a-triangle
 
@@ -551,6 +717,13 @@ Note: only positive integers will be tested.
 
 https://en.wikipedia.org/wiki/Triangle
 
+Вам даны два внутренних угла (в градусах) треугольника.
+
+Напишите функцию, возвращающую 3-е число.
+
+Примечание. Будут проверяться только положительные целые числа.
+
+
 РЕШЕНИЕ:
 
 function otherAngle(a, b) {
@@ -560,6 +733,7 @@ function otherAngle(a, b) {
 ///
 
 C23+++
+*
 
 https://www.codewars.com/kata/transportation-on-vacation
 
@@ -570,6 +744,14 @@ You will need a rental car in order for you to get around in your vacation. The 
 Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
 
 Write a code that gives out the total amount for different days(d).
+
+После тяжелого квартала в офисе вы решаете немного отдохнуть в отпуске. Итак, вы забронируете рейс для себя и своей девушки и постараетесь оставить позади весь этот беспорядок.
+
+Вам понадобится арендованный автомобиль, чтобы передвигаться во время отпуска. Менеджер по прокату автомобилей делает вам несколько выгодных предложений.
+
+Каждый день аренды автомобиля стоит 40 долларов. Если вы арендуете автомобиль на 7 и более дней, вы получите скидку 50 долларов США. Альтернативно, если вы арендуете автомобиль на 3 или более дней, вы получите скидку 20 долларов на общую сумму.
+
+Напишите код, который выдает общую сумму за разные дни(d).
 
 РЕШЕНИЕ:
 
@@ -587,10 +769,13 @@ function rentalCarCost(d) {
 ///
 
 C24+++
+*
 
 https://www.codewars.com/kata/type-of-sum
 
 Return the type of the sum of the two arguments
+
+Вернуть тип суммы двух аргументов
 
 РЕШЕНИЕ:
 
@@ -601,6 +786,7 @@ function typeOfSum(a, b) {
 ///
 
 C25+++
+*
 
 https://www.codewars.com/kata/will-you-make-it
 
@@ -609,6 +795,12 @@ You were camping with your friends far away from home, but when it's time to go 
 Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 
 Function should return true if it is possible and false if not.
+
+Вы были в походе с друзьями далеко от дома, но когда приходит время возвращаться, вы понимаете, что у вас заканчивается топливо, а ближайшая заправка находится в 50 милях! Вы знаете, что в среднем ваша машина пробегает около 25 миль на галлон. Осталось 2 галлона.
+
+Учитывая эти факторы, напишите функцию, которая сообщит вам, можно ли добраться до насоса или нет.
+
+Функция должна возвращать true, если это возможно, и false, если нет.
 
 РЕШЕНИЕ:
 
