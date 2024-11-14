@@ -61,7 +61,7 @@ const quarterOf = (month) => {
 
 const quarterOf = (month) => {
   switch (true) {
-    case (month >= 1 && month <= 3 ):
+    case ( month >= 1 && month <= 3 ):
       return 1;
     case ( month >= 4 && month <= 6 ):
       return 2;
@@ -822,6 +822,23 @@ function rentalCarCost(d) {
     return 40 * d ;
 }
 
+!TODO Справить с константами
+
+!РЕШЕНИЕ ЗАДАЧИ С МАГИЧЕСКИМИ ЧИСЛАМИ
+
+function rentalCarCost(days) {
+  const RENTAL_FEE_PER_DAY = 40;
+  const DISCOUNT_PER_WEEK = 50;
+  const DISCOUNT_FOR_THREE_DAYS = 20;
+  
+  if( days >= 7 ) {
+    return ( RENTAL_FEE_PER_DAY * days ) - DISCOUNT_PER_WEEK;
+  } else if ( days >= 3 ) {
+    return ( RENTAL_FEE_PER_DAY * days ) - DISCOUNT_FOR_THREE_DAYS;
+  }
+    return RENTAL_FEE_PER_DAY * days ;
+}
+ 
 ///
 
 C24+++
