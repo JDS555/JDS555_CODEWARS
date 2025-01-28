@@ -1,0 +1,897 @@
+
+CODEWARS_1_ST0+++
+
+///
+
+С1
+*
+
+https://www.codewars.com/kata/take-an-arrow-to-the-knee-functionally
+
+Arrow style Functions
+Come here to practice the Arrow style functions Not much else to say good luck!
+Details
+You will be given an array of numbers which can be used using the String.fromCharCode() (JS),
+ Tools.FromCharCode() (C#) method to convert the number to a character. It is recommended to map
+  over the array of numbers and convert each number to the corresponding ascii character.
+
+Examples
+These are example of how to convert a number to an ascii Character:
+Javascript => String.fromCharCode(97) // a
+C# => Tools.FromCharCode(97) // a
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+Функции стиля стрелки
+Приходите сюда, чтобы попрактиковаться в функциях стиля Arrow. Больше нечего пожелать удачи!
+Подробности
+Вам будет предоставлен массив чисел, который можно использовать с помощью метода
+ String.fromCharCode() (JS), Tools.FromCharCode() (C#) для преобразования числа в символ. Рекомендуется
+  сопоставить массив чисел и преобразовать каждое число в соответствующий символ ascii.
+
+Примеры
+Это пример того, как преобразовать число в символ ascii:
+Javascript => String.fromCharCode(97) // а
+C# => Tools.FromCharCode(97) // а
+
+РЕШЕНИЕ:
+
+
+///
+
+С2
+*
+
+https://www.codewars.com/kata/merge-two-sorted-arrays-into-one
+
+Description:
+You are given two sorted arrays that both only contain integers. Your task is to find a way to merge
+ them into a single one, sorted in asc order. Complete the function mergeArrays(arr1, arr2),
+  where arr1 and arr2 are the original sorted arrays.
+
+You don't need to worry about validation, since arr1 and arr2 must be arrays with 0 or more Integers.
+ If both arr1 and arr2 are empty, then just return an empty array.
+
+Note: arr1 and arr2 may be sorted in different orders. Also arr1 and arr2 may have same integers. Remove
+ duplicated in the returned result.
+
+Examples (input -> output)
+* [1, 2, 3, 4, 5], [6, 7, 8, 9, 10] -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+* [1, 3, 5, 7, 9], [10, 8, 6, 4, 2] -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+* [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
+Happy coding!
+
+Описание:
+Вам даны два отсортированных массива, каждый из которых содержит только целые числа. Ваша задача
+ — найти способ объединить их в одно, отсортировав по возрастанию. Завершите функцию mergeArrays(arr1, arr2),
+  где arr1 и arr2 — исходные отсортированные массивы.
+
+Вам не нужно беспокоиться о проверке, поскольку arr1 и arr2 должны быть массивами с 0 или более целыми числами.
+ Если оба arr1 и arr2 пусты, просто верните пустой массив.
+
+Примечание: arr1 и arr2 могут быть отсортированы в разном порядке. Также arr1 и arr2 могут иметь одинаковые
+ целые числа. Удалить дубликаты в возвращаемом результате.
+
+Примеры (ввод -> вывод)
+* [1, 2, 3, 4, 5], [6, 7, 8, 9, 10] -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+* [1, 3, 5, 7, 9], [10, 8, 6, 4, 2] -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+* [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10 , 11, 12]
+Приятного кодирования!
+
+РЕШЕНИЕ:
+
+///
+
+С3
+*
+
+https://www.codewars.com/kata/16-plus-18-equals-214
+
+Description:
+For this kata you will have to forget how to add two numbers.
+
+It can be best explained using the following meme:
+
+Dayane Rivas adding up a sum while competing in the Guatemalan television show "Combate" in May 2016
+
+In simple terms, our method does not like the principle of carrying
+ over numbers and just writes down every number it calculates :-)
+
+You may assume both integers are positive integers.
+
+Examples
+
+ 1 6
++1 8
+-----
+2 14
+ 
+You may assume both integers are positive integers and the result
+ will not be bigger than Integer.MAX_VALUE
+
+Описание:
+Для этого ката вам придется забыть, как складывать два числа.
+
+Лучше всего это можно объяснить с помощью следующего мема:
+
+Дайан Ривас подсчитывает сумму во время участия в гватемальском телешоу Combate в мае 2016 года.
+
+Говоря простым языком, нашему методу не нравится принцип переноса
+ над числами и просто записывает каждое вычисляемое число :-)
+
+Вы можете предположить, что оба целых числа являются положительными целыми числами.
+
+Примеры
+
+ 1 6
++1 8
+-----
+2 14
+
+Вы можете предположить, что оба целых числа являются положительными целыми числами, а результат
+ не будет больше Integer.MAX_VALUE
+
+РЕШЕНИЕ:
+
+///
+
+С4
+*
+
+https://www.codewars.com/kata/add-property-to-every-object-in-array
+
+Description:
+Your task is to add a new property usersAnswer to every object in the array questions. The value of
+ usersAnswer should be set to null. The solution should work for array of any length.
+
+For example:
+
+var questions = [{
+    question: "What's the currency of the USA?",
+    choices: ["US dollar", "Ruble", "Horses", "Gold"],
+    corAnswer: 0
+}, {
+    question: "Where was the American Declaration of Independence signed?",
+    choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
+    corAnswer: 0
+}];
+After adding the property the result should be:
+
+var questions = [{
+    question: "What's the currency of the USA?",
+    choices: ["US dollar", "Ruble", "Horses", "Gold"],
+    corAnswer: 0,
+    usersAnswer: null
+}, {
+    question: "Where was the American Declaration of Independence signed?",
+    choices: ["Philadelphia", "At the bottom", "Frankie's pub", "China"],
+    corAnswer: 0,
+    usersAnswer: null
+}];
+The questions array is already defined for you and is not the same as the one in the example.
+
+Описание:
+Ваша задача — добавить новое свойство userAnswer к каждому объекту в массиве вопросов. Стоимость
+ Для userAnswer должно быть установлено значение null. Решение должно работать для массива любой длины.
+
+Например:
+
+вар вопросы = [{
+    вопрос: «Какая валюта США?»,
+    варианты: ["Доллар США", "Рубль", "Лошади", "Золото"],
+    корОтвет: 0
+}, {
+    вопрос: «Где была подписана Декларация независимости США?»,
+    варианты: [«Филадельфия», «Внизу», «Паб Фрэнки», «Китай»],
+    корОтвет: 0
+}];
+После добавления свойства результат должен быть таким:
+
+вар вопросы = [{
+    вопрос: «Какая валюта США?»,
+    варианты: ["Доллар США", "Рубль", "Лошади", "Золото"],
+    корОтвет: 0,
+    пользователиОтвет: ноль
+}, {
+    вопрос: «Где была подписана Декларация независимости США?»,
+    варианты: [«Филадельфия», «Внизу», «Паб Фрэнки», «Китай»],
+    корОтвет: 0,
+    пользователиОтвет: ноль
+}];
+Массив вопросов уже определен для вас и отличается от приведенного в примере.
+
+РЕШЕНИЕ:
+
+///
+
+С5
+*
+
+https://www.codewars.com/kata/colour-association
+
+Description:
+Colour plays an important role in our lifes. Most of us like this colour better then another.
+ User experience specialists believe that certain colours have certain psychological meanings for us.
+
+You are given a 2D array, composed of a colour and its 'common' association in each array element.
+ The function you will write needs to return the colour as 'key' and association as its 'value'.
+
+For example:
+
+var array = [["white", "goodness"], ...] //returns [{white: 'goodness'}, ...]
+
+Описание:
+Цвет играет важную роль в нашей жизни. Большинству из нас этот цвет нравится больше, чем другой.
+ Специалисты по пользовательскому опыту считают, что определенные цвета имеют для нас
+  определенное психологическое значение.
+
+Вам дан двумерный массив, состоящий из цвета и его «общей» ассоциации в каждом элементе массива.
+ Функция, которую вы напишете, должна возвращать цвет как «ключ» и ассоциацию как его «значение».
+
+Например:
+
+var array = [["white", "goodness"], ...] // возвращает [{white: 'goodness'}, ...]
+
+РЕШЕНИЕ:
+
+///
+
+С6
+*
+
+https://www.codewars.com/kata/combine-objects
+
+Description:
+Your task is to write a function that takes two or more objects and returns a new object
+ which combines all the input objects.
+
+All input object properties will have only numeric values. Objects are combined together so
+ that the values of matching keys are added together.
+
+An example:
+
+const objA = { a: 10, b: 20, c: 30 }
+const objB = { a: 3, c: 6, d: 3 }
+combine(objA, objB) // Returns { a: 13, b: 20, c: 36, d: 3 }
+The combine function should be a good citizen, so should not mutate the input objects.
+
+Описание:
+Ваша задача — написать функцию, которая принимает два или более объекта и возвращает новый объект.
+ который объединяет все входные объекты.
+
+Все свойства входного объекта будут иметь только числовые значения. Объекты объединены вместе так
+ что значения совпадающих ключей суммируются.
+
+Пример:
+
+const objA = { a: 10, b: 20, c: 30 }
+const objB = { a: 3, c: 6, d: 3 }
+Комбайн(objA, objB) // Возвращает { a: 13, b: 20, c: 36, d: 3 }
+Функция объединения должна быть добросовестной, поэтому не должна изменять входные объекты.
+
+РЕШЕНИЕ:
+
+///
+
+С7
+*
+
+https://www.codewars.com/kata/count-the-digit
+
+Description:
+Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer.
+
+Square all numbers k (0 <= k <= n) between 0 and n.
+
+Count the numbers of digits d used in the writing of all the k**2.
+
+Implement the function taking n and d as parameters and returning this count.
+
+Examples:
+n = 10, d = 1 
+the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
+
+The function, when given n = 25 and d = 1 as argument, should return 11 since
+the k*k that contain the digit 1 are:
+1, 16, 81, 100, 121, 144, 169, 196, 361, 441.
+So there are 11 digits 1 for the squares of numbers between 0 and 25.
+Note that 121 has twice the digit 1.
+
+Описание:
+Возьмем целое число n (n >= 0) и цифру d (0 <= d <= 9) как целое число.
+
+Возведите в квадрат все числа k (0 <= k <= n) между 0 и n.
+
+Подсчитайте количество цифр d, использованных при написании всех k**2.
+
+Реализуйте функцию, принимающую n и d в качестве параметров и возвращающую это количество.
+
+Примеры:
+п = 10, д = 1 
+k*k: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+Мы используем цифру 1 в числах 1, 16, 81, 100. Тогда общее количество будет 4.
+
+Функция, если в качестве аргумента заданы n = 25 и d = 1, должна возвращать 11, поскольку
+k*k, содержащие цифру 1:
+1, 16, 81, 100, 121, 144, 169, 196, 361, 441.
+Итак, в квадратах чисел от 0 до 25 содержится 11 цифр 1.
+Обратите внимание, что в числе 121 в два раза больше цифры 1.
+
+РЕШЕНИЕ:
+
+///
+
+С8
+*
+
+https://www.codewars.com/kata/find-the-missing-element-between-two-arrays
+
+Description:
+Given two integer arrays where the second array is a shuffled duplicate of the first array
+ with one element missing, find the missing element.
+
+Please note, there may be duplicates in the arrays, so checking if a numerical value exists
+ in one and not the other is not a valid solution.
+
+find_missing([1, 2, 2, 3], [1, 2, 3]) => 2
+find_missing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]) => 8
+The first array will always have at least one element.
+
+Описание:
+Даны два целочисленных массива, где второй массив является перетасованным дубликатом первого массива.
+ если отсутствует один элемент, найдите недостающий элемент.
+
+Обратите внимание: в массивах могут быть дубликаты, поэтому проверьте, существует ли числовое значение.
+ в одном, а не в другом, это недопустимое решение.
+
+find_missing([1, 2, 2, 3], [1, 2, 3]) => 2
+find_missing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]) => 8
+Первый массив всегда будет иметь хотя бы один элемент.
+
+РЕШЕНИЕ:
+
+///
+
+С9
+*
+
+https://www.codewars.com/kata/get-decimal-part-of-the-given-number
+
+Description:
+Write a function that returns only the decimal part of the given number.
+
+You only have to handle valid numbers, not Infinity, NaN, or similar.
+ Always return a positive decimal part.
+
+Examples
+getDecimal(2.4)  === 0.4
+getDecimal(-0.2) === 0.2
+
+Описание:
+Напишите функцию, которая возвращает только десятичную часть заданного числа.
+
+Вам нужно обрабатывать только действительные числа, а не Infinity, NaN или аналогичные.
+ Всегда возвращайте положительную десятичную часть.
+
+Примеры
+getDecimal(2.4) === 0,4
+getDecimal(-0,2) === 0,2
+
+РЕШЕНИЕ:
+
+///
+
+С10
+*
+
+https://www.codewars.com/kata/maximum-triplet-sum-array-series-number-7
+
+Description:
+Task
+Given an array/list [] of n integers , find maximum triplet sum in the array Without duplications .
+
+Notes :
+Array/list size is at least 3 .
+
+Array/list numbers could be a mixture of positives , negatives and zeros .
+
+Repetition of numbers in the array/list could occur , So (duplications are not included when summing).
+
+Input >> Output Examples
+1- maxTriSum ({3,2,6,8,2,3}) ==> return (17)
+Explanation:
+As the triplet that maximize the sum {6,8,3} in order , their sum is (17)
+
+Note : duplications are not included when summing , (i.e) the numbers added only once .
+
+2- maxTriSum ({2,1,8,0,6,4,8,6,2,4}) ==> return (18)
+Explanation:
+As the triplet that maximize the sum {8, 6, 4} in order , their sum is (18) ,
+
+Note : duplications are not included when summing , (i.e) the numbers added only once .
+
+3- maxTriSum ({-7,12,-7,29,-5,0,-7,0,0,29}) ==> return (41)
+Explanation:
+As the triplet that maximize the sum {12 , 29 , 0} in order , their sum is (41) ,
+
+Note : duplications are not included when summing , (i.e) the numbers added only once .
+
+Playing with Numbers Series
+Playing With Lists/Arrays Series
+For More Enjoyable Katas
+
+Описание:
+Задача
+Учитывая массив/список [] из n целых чисел, найдите максимальную тройную сумму в массиве без дублирования.
+
+Примечания :
+Размер массива/списка не менее 3 .
+
+Числа массива/списка могут представлять собой смесь положительных, отрицательных и нулевых значений.
+
+Повторение чисел в массиве/списке может произойти, поэтому (повторения не учитываются при суммировании).
+
+Ввод >> Примеры вывода
+1- maxTriSum ({3,2,6,8,2,3}) ==> return (17)
+Объяснение:
+Как тройка, которая максимизирует сумму {6,8,3} по порядку, их сумма равна (17)
+
+Примечание: дублирования не учитываются при суммировании, (т. е. числа складываются только один раз).
+
+2- maxTriSum ({2,1,8,0,6,4,8,6,2,4}) ==> return (18)
+Объяснение:
+Поскольку тройка максимизирует сумму {8, 6, 4} по порядку, их сумма равна (18) ,
+
+Примечание: дублирования не учитываются при суммировании, (т. е. числа складываются только один раз).
+
+3- maxTriSum ({-7,12,-7,29,-5,0,-7,0,0,29}) ==> return (41)
+Объяснение:
+Поскольку тройка максимизирует сумму {12, 29, 0} по порядку, их сумма равна (41),
+
+Примечание: дублирования не учитываются при суммировании, (т. е. числа складываются только один раз).
+
+Серия игр с числами
+Серия игр со списками/массивами
+Для более приятных ката
+
+РЕШЕНИЕ:
+
+///
+
+С11
+*
+
+https://www.codewars.com/kata/whose-bicycle
+
+Description:
+I am the father of three wonderful sons. before the beginning of the school year, I promised them
+ that I would buy a bicycle for someone who would bring the best marks at the end of the school year.
+  it's time to keep promises and I count on you.
+
+You have 3 input objects(school diaries) with school subjects and marks (1-10). For example:
+
+{
+  'algebra': 6,
+  'history': 8,
+  'physics': 9,
+  'geography': 2,
+  'chemistry': 9
+}
+Return please :
+
+'I need to buy a bicycle for my first son.' // the sum of the marks is the highest  in the first diary.
+
+'I need to buy a bicycle for my second son.' // the sum of the marks is the highest in the second diary.
+
+'I need to buy a bicycle for my third son.' //  the sum of the marks is the highest in the third diary.
+If two or three sons have the same highest marks, you need to choose the younger one. Use the age table
+ which is constant and preloaded:
+
+const ageTable = {
+                  'firstSonAge': 14,
+                  'secondSonAge': 9,
+                  'thirdSonAge': 8
+                }
+
+
+Описание:
+Я отец трёх замечательных сыновей. Перед началом учебного года я пообещал им, что куплю велосипед тому, кто покажет лучшие оценки в конце учебного года. пришло время сдерживать обещания, и я рассчитываю на вас.
+
+У вас есть 3 входных объекта (школьные дневники) со школьными предметами и оценками (1-10). Например:
+
+{
+  'алгебра': 6,
+  'история': 8,
+  'физика': 9,
+  'география': 2,
+  'химия': 9
+}
+Верните пожалуйста:
+
+«Мне нужно купить велосипед для моего первого сына». // сумма оценок самая высокая в первом дневнике.
+
+«Мне нужно купить велосипед для второго сына». // сумма оценок самая высокая во втором дневнике.
+
+«Мне нужно купить велосипед для третьего сына». // сумма оценок самая высокая в третьем дневнике.
+Если два или три сына имеют одинаковые высшие оценки, нужно выбрать младшего. Используйте возрастную таблицу, которая является постоянной и предварительно загруженной:
+
+const ageTable = {
+                  'firstSonAge': 14,
+                  'второйСынВозраст': 9,
+                  «ТретийСынВозраст»: 8
+                }
+
+РЕШЕНИЕ:
+
+///
+
+С12
+*
+
+https://www.codewars.com/kata/nickname-generator
+
+Description:
+Nickname Generator
+
+Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+
+If the 3rd letter is a consonant, return the first 3 letters.
+
+nickname("Robert") //=> "Rob"
+nickname("Kimberly") //=> "Kim"
+nickname("Samantha") //=> "Sam"
+If the 3rd letter is a vowel, return the first 4 letters.
+
+nickname("Jeannie") //=> "Jean"
+nickname("Douglas") //=> "Doug"
+nickname("Gregory") //=> "Greg"
+If the string is less than 4 characters, return "Error: Name too short".
+
+Notes:
+
+Vowels are "aeiou", so discount the letter "y".
+Input will always be a string.
+Input will always have the first letter capitalised and the rest lowercase (e.g. Sam).
+The input can be modified
+
+Описание:
+Генератор псевдонимов
+
+Напишите функцию NickGenerator, которая принимает строковое имя в качестве аргумента и возвращает первые 3 или 4 буквы в качестве псевдонима.
+
+Если 3-я буква согласная, верните первые 3 буквы.
+
+Nick("Роберт") //=> "Роб"
+Nick("Кимберли") //=> "Ким"
+Nick("Саманта") //=> "Сэм"
+Если третья буква гласная, верните первые 4 буквы.
+
+Nick("Джинни") //=> "Джин"
+Nick("Дуглас") //=> "Дуг"
+ник("Грегори") //=> "Грег"
+Если строка меньше 4 символов, верните «Ошибка: имя слишком короткое».
+
+Примечания:
+
+Гласные — это «aeiou», поэтому букву «y» не учитывайте.
+Ввод всегда будет строкой.
+При вводе первая буква всегда будет заглавной, а остальные — строчными (например, Сэм).
+Ввод можно изменить
+
+РЕШЕНИЕ:
+
+///
+
+С13
+*
+
+https://www.codewars.com/kata/odd-even-string-sort
+
+Description:
+Given a string s, your task is to return another string such that even-indexed and odd-indexed characters of s are grouped and the groups are space-separated. Even-indexed group comes as first, followed by a space, and then by the odd-indexed part.
+
+Examples
+input:    "CodeWars" => "CdWr oeas"
+           ||||||||      |||| ||||
+indices:   01234567      0246 1357
+Even indices 0, 2, 4, 6, so we have "CdWr" as the first group.
+Odd indices are 1, 3, 5, 7, so the second group is "oeas".
+And the final string to return is "Cdwr oeas".
+
+Notes
+Tested strings are at least 8 characters long.
+
+Описание:
+Учитывая строку s, ваша задача — вернуть другую строку, в которой символы строки s с четным и нечетным индексом будут сгруппированы, а группы разделены пробелами. Первой идет группа с четным индексом, за ней следует пробел, а затем часть с нечетным индексом.
+
+Примеры
+ввод: "CodeWars" => "CdWr oeas"
+           ||||||||      |||| ||||
+индексы: 01234567 0246 1357
+Даже индексы 0, 2, 4, 6, поэтому у нас первая группа — «CdWr».
+Нечетные индексы — 1, 3, 5, 7, поэтому вторая группа — «oeas».
+И последняя возвращаемая строка — «Cdwr oeas».
+
+Примечания
+Протестированные строки имеют длину не менее 8 символов.
+
+РЕШЕНИЕ:
+
+///
+
+С14
+*
+
+https://www.codewars.com/kata/power-of-two
+
+Description:
+Complete the function power_of_two/powerOfTwo (or equivalent, depending on your language) that determines if a given non-negative integer is a power of two. From the corresponding Wikipedia entry:
+
+a power of two is a number of the form 2n where n is an integer, i.e. the result of exponentiation with number two as the base and integer n as the exponent.
+
+You may assume the input is always valid.
+
+Examples
+power_of_two?(1024) # true
+power_of_two?(4096) # true
+power_of_two?(333)  # false
+Beware of certain edge cases - for example, 1 is a power of 2 since 2^0 = 1 and 0 is not a power of 2.
+
+Описание:
+Завершите функцию power_of_two/powerOfTwo (или ее эквивалент, в зависимости от вашего языка), которая определяет, является ли данное неотрицательное целое число степенью двойки. Из соответствующей записи в Википедии:
+
+степень двойки — это число вида 2n, где n — целое число, т. е. результат возведения в степень с числом два в качестве основания и целым числом n в качестве показателя степени.
+
+Вы можете предположить, что ввод всегда действителен.
+
+Примеры
+power_of_two?(1024) # true
+power_of_two?(4096) # true
+power_of_two?(333) # false
+Остерегайтесь определенных крайних случаев - например, 1 является степенью 2, поскольку 2^0 = 1, а 0 не является степенью 2.
+
+РЕШЕНИЕ:
+
+///
+
+С15
+*
+
+Description:
+The input will be an array of dictionaries.
+
+Return the values as a string-seperated sentence in the order of their keys' integer equivalent (increasing order).
+
+The keys are not reoccurring and their range is -999 < key < 999. The dictionaries' keys & values will always be strings and will always not be empty.
+
+Example
+Input:
+List = [
+        {'4': 'dog' }, {'2': 'took'}, {'3': 'his'},
+        {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}
+       ]
+
+Output:
+'Vatsan took his dog for a spin'
+
+Описание:
+Входными данными будет массив словарей.
+
+Возвращайте значения в виде предложения, разделенного строками, в порядке целочисленного эквивалента их ключей (в порядке возрастания).
+
+Ключи не повторяются, и их диапазон составляет -999 < ключ < 999. Ключи и значения словарей всегда будут строками и не будут пустыми.
+
+Пример
+Вход:
+Список = [
+        {'4': 'собака' }, {'2': 'взял'}, {'3': 'его'},
+        {'-2': 'Ватсан'}, {'5': 'за'}, {'6': 'а'}, {'12': 'вращение'}
+       ]
+
+Выход:
+«Вацан покатал свою собаку»
+
+РЕШЕНИЕ:
+
+///
+
+С16
+*
+
+https://www.codewars.com/kata/minimize-sum-of-array-array-series-number-1
+
+Description:
+Introduction and Warm-up (Highly recommended)
+Playing With Lists/Arrays Series
+Task
+Given an array of integers , Find the minimum sum which is obtained from summing each Two integers product .
+
+Notes
+Array/list will contain positives only .
+Array/list will always have even size
+Input >> Output Examples
+minSum({5,4,2,3}) ==> return (22) 
+Explanation:
+The minimum sum obtained from summing each two integers product ,  5*2 + 3*4 = 22
+minSum({12,6,10,26,3,24}) ==> return (342)
+Explanation:
+The minimum sum obtained from summing each two integers product ,  26*3 + 24*6 + 12*10 = 342
+minSum({9,2,8,7,5,4,0,6}) ==> return (74)
+Explanation:
+The minimum sum obtained from summing each two integers product ,  9*0 + 8*2 +7*4 +6*5 = 74
+
+Описание:
+Введение и разминка (настоятельно рекомендуется)
+Серия игр со списками/массивами
+Задача
+Учитывая массив целых чисел, найдите минимальную сумму, которая получается в результате суммирования каждого произведения двух целых чисел.
+
+Примечания
+Массив/список будет содержать только положительные значения.
+Массив/список всегда будет иметь четный размер.
+Ввод >> Примеры вывода
+minSum({5,4,2,3}) ==> return (22) 
+Объяснение:
+Минимальная сумма, полученная в результате суммирования произведения каждых двух целых чисел, 5*2 + 3*4 = 22.
+minSum({12,6,10,26,3,24}) ==> return (342)
+Объяснение:
+Минимальная сумма, полученная в результате суммирования произведения каждых двух целых чисел, 26*3 + 24*6 + 12*10 = 342.
+minSum({9,2,8,7,5,4,0,6}) ==> return (74)
+Объяснение:
+Минимальная сумма, полученная в результате суммирования произведения каждых двух целых чисел: 9*0 + 8*2 +7*4 +6*5 = 74.
+
+
+РЕШЕНИЕ:
+
+///
+
+С17
+*
+
+https://www.codewars.com/kata/unpacking-arguments
+
+Description:
+You must create a function, spread, that takes a function and a list of arguments to be applied to that function. You must make this function return the result of calling the given function/lambda with the given arguments.
+
+eg:
+
+spread(someFunction, [1, true, "Foo", "bar"] ) 
+// is the same as...
+someFunction(1, true, "Foo", "bar")
+
+Описание:
+Вы должны создать функцию распространения, которая принимает функцию и список аргументов, которые будут применены к этой функции. Вы должны заставить эту функцию возвращать результат вызова данной функции/лямбды с заданными аргументами.
+
+например:
+
+распространение(someFunction, [1, true, "Foo", "bar"] ) 
+// то же самое, что...
+someFunction(1, true, «Фу», «бар»)
+
+РЕШЕНИЕ:
+
+///
+
+С18
+*
+
+https://www.codewars.com/kata/vowel-one
+
+Description:
+vowelOne
+Write a function that takes a string and outputs a strings of 1's and 0's where vowels become 1's and non-vowels become 0's.
+
+All non-vowels including non alpha characters (spaces,commas etc.) should be included.
+
+Examples:
+
+vowelOne( "abceios" ) // "1001110"
+
+vowelOne( "aeiou, abc" ) // "1111100100"
+
+Описание:
+гласнаяОдин
+Напишите функцию, которая принимает строку и выводит строки из 1 и 0, где гласные становятся 1, а негласные становятся 0.
+
+Все негласные, включая небуквенные символы (пробелы, запятые и т. д.), должны быть включены.
+
+Примеры:
+
+vowelOne("abceios") // "1001110"
+
+vowelOne("aeiou, abc" ) // "1111100100"
+
+РЕШЕНИЕ:
+
+///
+
+С19
+*
+
+https://www.codewars.com/kata/who-is-the-killer-1
+
+Description:
+Who is the killer?
+Some people have been killed!
+You have managed to narrow the suspects down to just a few. Luckily, you know every person who those suspects have seen on the day of the murders.
+
+Task.
+Given a dictionary with all the names of the suspects and everyone that they have seen on that day which may look like this:
+
+{'James': ['Jacob', 'Bill', 'Lucas'],
+ 'Johnny': ['David', 'Kyle', 'Lucas'],
+ 'Peter': ['Lucy', 'Kyle']}
+and also a list of the names of the dead people:
+
+['Lucas', 'Bill']
+return the name of the one killer, in our case 'James' because he is the only person that saw both 'Lucas' and 'Bill'
+
+Описание:
+Кто убийца?
+Некоторые люди были убиты!
+Вам удалось сузить круг подозреваемых до нескольких человек. К счастью, вы знаете каждого человека, которого подозреваемые видели в день убийства.
+
+Задача.
+Учитывая словарь со всеми именами подозреваемых и всех, кого они видели в тот день, который может выглядеть так:
+
+{'Джеймс': ['Джейкоб', 'Билл', 'Лукас'],
+ «Джонни»: [«Дэвид», «Кайл», «Лукас»],
+ 'Питер': ['Люси', 'Кайл']}
+а также список имен погибших людей:
+
+['Лукас', 'Билл']
+верните имя одного убийцы, в нашем случае «Джеймс», потому что он единственный человек, который видел и «Лукаса», и «Билла».
+
+РЕШЕНИЕ:
+
+///
+
+С20
+*
+
+https://www.codewars.com/kata/data-reverse
+
+Description:
+A stream of data is received and needs to be reversed.
+
+Each segment is 8 bits long, meaning the order of these segments needs to be reversed, for example:
+
+11111111  00000000  00001111  10101010
+ (byte1)   (byte2)   (byte3)   (byte4)
+should become:
+
+10101010  00001111  00000000  11111111
+ (byte4)   (byte3)   (byte2)   (byte1)
+The total number of bits will always be a multiple of 8.
+
+The data is given in an array as such:
+
+[1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]
+Note: In the C and NASM languages you are given the third parameter which is the number of segment blocks.
+
+Описание:
+Поток данных получен, и его необходимо реверсировать.
+
+Каждый сегмент имеет длину 8 бит, что означает, что порядок этих сегментов необходимо изменить на обратный, например:
+
+11111111 00000000 00001111 10101010
+ (байт1) (байт2) (байт3) (байт4)
+должно стать:
+
+10101010 00001111 00000000 11111111
+ (байт4) (байт3) (байт2) (байт1)
+Общее количество бит всегда будет кратно 8.
+
+Данные задаются в виде массива:
+
+[1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1 ,0,1,0,1,0,1,0]
+Примечание. В языках C и NASM вам предоставляется третий параметр — количество блоков сегмента.
+
+РЕШЕНИЕ:
+
+///
